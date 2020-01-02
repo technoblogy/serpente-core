@@ -1,0 +1,59 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+# Serpente (SAMD21)
+# ------------------------------
+adafruit_serpente.name=Serpente
+adafruit_serpente.vid.0=0x239A
+adafruit_serpente.pid.0=0x801C
+adafruit_serpente.vid.1=0x239A
+adafruit_serpente.pid.1=0x001C
+adafruit_serpente.upload.tool=bossac
+adafruit_serpente.upload.protocol=sam-ba
+adafruit_serpente.upload.maximum_size=262144
+adafruit_serpente.upload.offset=0x2000
+adafruit_serpente.upload.use_1200bps_touch=true
+adafruit_serpente.upload.wait_for_upload_port=true
+adafruit_serpente.upload.native_usb=true
+adafruit_serpente.build.mcu=cortex-m0plus
+adafruit_serpente.build.f_cpu=48000000L
+adafruit_serpente.build.usb_product="Serpente"
+adafruit_serpente.build.usb_manufacturer="Arturo182"
+adafruit_serpente.build.board=SERPENTE
+adafruit_serpente.build.core=arduino
+adafruit_serpente.build.extra_flags=-DCRYSTALLESS -DSERPENTE -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+adafruit_serpente.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+# adafruit_serpente.build.openocdscript=openocd_scripts/gemma_m0.cfg
+adafruit_serpente.build.variant=serpente
+adafruit_serpente.build.variant_system_lib=
+adafruit_serpente.build.vid=0x239A
+adafruit_serpente.build.pid=0x801C
+# adafruit_serpente.bootloader.tool=openocd
+# adafruit_serpente.bootloader.file=gemmaM0/bootloader-gemma_m0-v2.0.0-adafruit.5.bin
+adafruit_serpente.menu.usbstack.arduino=Arduino
+adafruit_serpente.menu.usbstack.tinyusb=TinyUSB
+adafruit_serpente.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+adafruit_serpente.menu.debug.off=Off
+adafruit_serpente.menu.debug.on=On
+adafruit_serpente.menu.debug.on.build.flags.debug=-g
+
