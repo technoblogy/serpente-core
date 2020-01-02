@@ -8,6 +8,8 @@ For full information about the Serpente boards see: [Serpente Documentation](htt
 
 To buy the boards see: [Serpente - A Tiny CircuitPython Prototyping Board](https://www.tindie.com/products/arturo182/serpente-a-tiny-circuitpython-prototyping-board/) on Tindie.
 
+To get uLisp for the Serpente boards go to https://github.com/technoblogy/ulisp-serpente.
+
 #### Installing the Serpente core
 
 Install the Arduino Core as follows:
