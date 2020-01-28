@@ -78,12 +78,10 @@ extern "C"
 
 // LEDs
 
-#define PIN_LED_13           (6u) // Red
-#define PIN_LED_RXL          (7u) // Green
-#define PIN_LED_TXL          (8u) // Blue
-#define PIN_LED              PIN_LED_13
-#define PIN_LED2             PIN_LED_RXL
-#define PIN_LED3             PIN_LED_TXL
+#define PIN_LED              (6u) // Red
+#define PIN_LED2             (7u) // Green
+#define PIN_LED3             (8u) // Blue
+#define PIN_LED_13           PIN_LED
 #define LED_BUILTIN          PIN_LED_13
 
 
