@@ -197,6 +197,10 @@ extern Uart Serial1;
 #define SERIAL_PORT_HARDWARE        Serial1
 #define SERIAL_PORT_HARDWARE_OPEN   Serial1
 
+// On-board QSPI Flash
+#define EXTERNAL_FLASH_DEVICES   GD25Q32C
+#define EXTERNAL_FLASH_USE_SPI
+
 //QSPI Pins
 #define PIN_QSPI_SCK    (9u)
 #define PIN_QSPI_CS     (10u)
