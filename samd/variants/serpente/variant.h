@@ -199,7 +199,16 @@ extern Uart Serial1;
 
 // On-board QSPI Flash
 #define EXTERNAL_FLASH_DEVICES   GD25Q32C
-#define EXTERNAL_FLASH_USE_SPI
+#define EXTERNAL_FLASH_USE_SPI   SPI1
+#define EXTERNAL_FLASH_USE_CS    SS1
+#define PIN_SPI1_MISO         (12u)
+#define PIN_SPI1_MOSI         (11u)
+#define PIN_SPI1_SCK          (9u)
+
+static const uint8_t SS1   = 10 ;
+static const uint8_t MOSI1 = PIN_SPI_MOSI ;
+static const uint8_t MISO1 = PIN_SPI_MISO ;
+static const uint8_t SCK1  = PIN_SPI_SCK ;
 
 //QSPI Pins
 #define PIN_QSPI_SCK    (9u)
