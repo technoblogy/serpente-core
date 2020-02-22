@@ -118,7 +118,7 @@ static const uint8_t A5  = PIN_A5;
 /*
  * SPI Interfaces
  */
-#define SPI_INTERFACES_COUNT 1
+#define SPI_INTERFACES_COUNT 2
 
 #define PIN_SPI_MISO         (2ul) // PA06
 #define PIN_SPI_MOSI         (0ul) // PA04
@@ -132,6 +132,17 @@ static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
 
+#define PIN_SPI1_MISO         (12u)
+#define PIN_SPI1_MOSI         (11u)
+#define PIN_SPI1_SCK          (9u)
+#define PERIPH_SPI1           sercom1
+#define PAD_SPI1_TX           SPI_PAD_0_SCK_1
+#define PAD_SPI1_RX           SERCOM_RX_PAD_2
+
+static const uint8_t SS1   = 10 ;
+static const uint8_t MOSI1 = PIN_SPI_MOSI ;
+static const uint8_t MISO1 = PIN_SPI_MISO ;
+static const uint8_t SCK1  = PIN_SPI_SCK ;
 
 /*
  * Wire Interfaces
@@ -201,14 +212,6 @@ extern Uart Serial1;
 #define EXTERNAL_FLASH_DEVICES   GD25Q32C
 #define EXTERNAL_FLASH_USE_SPI   SPI1
 #define EXTERNAL_FLASH_USE_CS    SS1
-#define PIN_SPI1_MISO         (12u)
-#define PIN_SPI1_MOSI         (11u)
-#define PIN_SPI1_SCK          (9u)
-
-static const uint8_t SS1   = 10 ;
-static const uint8_t MOSI1 = PIN_SPI_MOSI ;
-static const uint8_t MISO1 = PIN_SPI_MISO ;
-static const uint8_t SCK1  = PIN_SPI_SCK ;
 
 //QSPI Pins
 #define PIN_QSPI_SCK    (9u)
