@@ -135,7 +135,7 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 #define PIN_SPI1_MISO         (12u)
 #define PIN_SPI1_MOSI         (11u)
 #define PIN_SPI1_SCK          (9u)
-#define PERIPH_SPI1           sercom1
+#define PERIPH_SPI1           sercom3
 #define PAD_SPI1_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI1_RX           SERCOM_RX_PAD_2
 
